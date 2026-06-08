@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSHOP</title>
+ 
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+     
+      <a href="#" class="logo">
+        Tech<span class="logo__accent">SHOP</span>
+      </a>
+
+    
+      <nav class="nav" id="nav">
+        <a href="#accueil" class="nav__link nav__link--active">Accueil</a>
+        <a href="#produits" class="nav__link">Produits</a>
+        <a href="#categories" class="nav__link">Catégories</a>
+        <a href="#avantages" class="nav__link">Avantages</a>
+      </nav>
+
+      
+      <div class="header__actions">
+        
+        <button class="icon-btn" id="searchBtn" aria-label="Rechercher">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-btn__badge" id="cartCount">0</span>
+        </button>
+
+        
+        <button class="btn btn--primary btn--small" id="loginBtn">Connexion</button>
+
+      
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <input type="text" placeholder="Rechercher un produit..." id="searchInput">
+        <button class="search-bar__close" id="searchClose">&times;</button>
+      </div>
+    </div>
+  </header>
+
+  
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+       
+        <span class="hero__badge">NOUVELLE COLLECTION 2026</span>
+
+    
+        <h1 class="hero__title">
+          BINEVENUE SUR NOTRE SITE <br>
+          <span class="hero__title--accent">TECHSHOP</span>
+        </h1>
+
+        
+        <p class="hero__text">
+         Vous pouvez trouver tous les produits de la technologie ici.
+        </p>
+
+        
+        <div class="hero__buttons">
+          <a href="#produits" class="btn btn--primary">Découvrir la boutique</a>
+          <a href="#categories" class="btn btn--outline">Voir les PRODUITS</a>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="produits" class="section-placeholder"></section>
+    <section id="categories" class="section-placeholder"></section>
+    <section id="avantages" class="section-placeholder"></section>
+  </main>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
