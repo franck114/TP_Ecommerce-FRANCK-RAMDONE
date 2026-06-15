@@ -8,20 +8,26 @@
     <title>PRODUIT | TechShop</title>
 </head>
 <body>
-    <!-- <nav>
+    <nav>
         <div class="en-tete">
             <div class="logo">
                 <a href="index.html">TechShop</a>
             </div>
-            <div class="lien">
+
+            <button class="burger" id="burger">
+            <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="lien" id="menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="produit.html">Produit</a></li>
-                <li><a href="panier.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="favoris.html"><i class="fas fa-heart"></i> <span id="favoris">0</span></a></li>
+                <li><a href="panier.html"><i class="fas fa-shopping-cart"></i> <span id="count">0</span></a></li>
             </ul>
             </div>
         </div>
-    </nav> -->
+    </nav>
     <main>
     <div class="pro">
     <h1> NOS PRODUIT</h1>
@@ -34,6 +40,7 @@
             <p>Webcam HD avec microphone intégré</p>
             <p>Prix: 99,99 €</p>
             <button class="details">Détails</button>
+            <button class="ajouter-au-favoris"><i class="fas fa-heart"></i></button>
             <button class="ajouter-au-panier">Ajouter</button>
         </div>
         <div class="produit">
@@ -41,7 +48,8 @@
             <h2>Tapis de souris</h2>
             <p>Tapis de souris ergonomique avec surface de frottement optimisée</p>
             <p>Prix: 149,99 €</p>
-            <button class="details">étails</button>
+            <button class="details">Détails</button>
+            <button class="ajouter-au-favoris"><i class="fas fa-heart"></i></button>
             <button class="ajouter-au-panier">Ajouter</button>
         </div>
         <div class="produit">
@@ -50,6 +58,7 @@
             <p>Souris optique avec capteur de haute précision</p>
             <p>Prix: 199,99 €</p>
             <button class="details">Détails</button>
+            <button class="ajouter-au-favoris"><i class="fas fa-heart"></i></button>
             <button class="ajouter-au-panier">Ajouter</button>
         </div>
         <div class="produit">
@@ -58,6 +67,7 @@
             <p>Ecran LED 24 pouces avec résolution Full HD</p>
             <p>Prix: 249,99 €</p>
             <button class="details">Détails</button>
+            <button class="ajouter-au-favoris"><i class="fas fa-heart"></i></button>
             <button class="ajouter-au-panier">Ajouter</button>
         </div>
         <div class="produit">
@@ -66,6 +76,7 @@
             <p>Disque dur SSD NVMe avec une vitesse de lecture et d'écriture élevée</p>
             <p>Prix: 299,99 €</p>
             <button class="details">Détails</button>
+            <button class="ajouter-au-favoris"><i class="fas fa-heart"></i></button>
             <button class="ajouter-au-panier">Ajouter</button>
         </div>
         <div class="produit">
@@ -74,6 +85,7 @@
             <p>Clavier mécanique avec éclairage RGB personnalisable</p>
             <p>Prix: 349,99 €</p>
             <button class="details">Détails</button>
+            <button class="ajouter-au-favoris"><i class="fas fa-heart"></i></button>
             <button class="ajouter-au-panier">Ajouter</button>
         </div>
         <div class="produit">
@@ -82,6 +94,7 @@
             <p>Casque audio sans fil avec réduction de bruit</p>
             <p>Prix: 399,99 €</p>
             <button class="details">Détails</button>
+            <button class="ajouter-au-favoris"><i class="fas fa-heart"></i></button>
             <button class="ajouter-au-panier">Ajouter</button>
         </div>
         <div class="produit">
@@ -90,6 +103,7 @@
             <p>Carte graphique haute performance pour les gamers et les créateurs de contenu</p>
             <p>Prix: 449,99 €</p>
             <button class="details">Détails</button>
+            <button class="ajouter-au-favoris"><i class="fas fa-heart"></i></button>
             <button class="ajouter-au-panier">Ajouter</button>
         </div>
         
@@ -120,5 +134,7 @@
             </div>
         </div>
     </footer>
+    <script src="JS/ajout.js"></script>
+    <script src="JS/favoris.js"></script>
 </body>
 </html>

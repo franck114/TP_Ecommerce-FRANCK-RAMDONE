@@ -1,3 +1,39 @@
+nav{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.en-tete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 .pro{
     text-align: center;
     margin-top: 20px;
@@ -57,6 +93,8 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    position: sticky;
+    
 }
 .pied{
     display: grid;
@@ -73,9 +111,88 @@ a{
     color: white;
     text-decoration: none;
 }
+i{
+    color: white;
+    
+}
+.ajouter-au-favoris {
+    background-color: black;
+    /* background-color: #f44336; */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* .ajouter-au-favoris:hover {
+    background-color: #d32f2f;
+} */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
+    .en-tete {
+        flex-wrap: wrap;
+    }
     .grille {
         grid-template-columns: repeat(1, 1fr);
     }
+    .burger {
+        display: block;
+    }
+    .lien {
+        display: none;
+        width: 100%;
+    }
+    .lien.actif {
+        display: block;
+    }
+    .lien ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .lien ul li {
+        margin: 10px 0;
+    }
+}
+
+.panier {
+    padding: 20px;
+    text-align: center;
+}
+.panier table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.panier th, .panier td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.panier th {
+    background-color: #f2f2f2;
+}
+.panier button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.panier button:hover {
+    background-color: #d32f2f;
+}
+.commande {
+    margin-top: 20px;
+}
+.commande .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.commande .btn:hover {
+    background-color: #45a049;
 }
