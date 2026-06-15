@@ -1,0 +1,198 @@
+nav{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.en-tete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.pro{
+    text-align: center;
+    margin-top: 20px;
+}
+.grille{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.produit{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.produit:hover {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.produit img {
+    width: 200px;
+    height: 200px;
+}
+.ajouter-au-panier {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ajouter-au-panier:hover {
+    background-color: #45a049;
+}
+.details{
+    background-color: rgb(31, 126, 215);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.details:hover {
+    background-color: rgb(6, 134, 246);
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    
+}
+.pied{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    padding: 10px;
+}
+.reseaux a{
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+i{
+    color: white;
+    
+}
+.ajouter-au-favoris {
+    background-color: black;
+    /* background-color: #f44336; */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* .ajouter-au-favoris:hover {
+    background-color: #d32f2f;
+} */
+
+@media screen and (max-width: 780px) {
+    .en-tete {
+        flex-wrap: wrap;
+    }
+    .grille {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .burger {
+        display: block;
+    }
+    .lien {
+        display: none;
+        width: 100%;
+    }
+    .lien.actif {
+        display: block;
+    }
+    .lien ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .lien ul li {
+        margin: 10px 0;
+    }
+}
+
+.panier {
+    padding: 20px;
+    text-align: center;
+}
+.panier table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.panier th, .panier td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.panier th {
+    background-color: #f2f2f2;
+}
+.panier button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.panier button:hover {
+    background-color: #d32f2f;
+}
+.commande {
+    margin-top: 20px;
+}
+.commande .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.commande .btn:hover {
+    background-color: #45a049;
+}

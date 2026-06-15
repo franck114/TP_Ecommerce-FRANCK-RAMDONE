@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>FAVORIS | TechShop</title>
+</head>
+<body>
+    <nav>
+        <div class="en-tete">
+            <div class="logo">
+                <a href="index.html">TechShop</a>
+            </div>
+            
+            <button class="burger" id="burger">
+            <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="lien" id="menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produit.html">Produit</a></li>
+                    <li><a href="favoris.html"><i class="fas fa-heart"></i> <span id="favoris">0</span></a></li>
+                    <li><a href="panier.html"><i class="fas fa-shopping-cart"></i> <span id="count">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="panier">
+        <h1>Mes Favoris</h1>
+        <!-- <p>Vous n'avez pas encore ajouté de produits à vos favoris.</p> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Prix</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="favoris-list">
+            <!-- Les produits favoris seront ajoutés ici dynamiquement -->
+        </tbody>
+    </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechShop. Tous droits réservés.</p>
+    </footer>
+
+    <script src="JS/favoris.js"></script>
+</body>
+</html>
